@@ -10,10 +10,10 @@ clear
 apt install jq curl -y
 # sub=$(</dev/urandom tr -dc a-z | head -c4)
 sub=$(premium)
-DOMAIN=nevermoressh.me
-SUB_DOMAIN=${sub}.nevermoressh.me
-CF_ID=elliez667@gmail.com
-CF_KEY=565df838cbdf80722e12eb5b1d7186143b74e
+DOMAIN=diriku.my.id
+SUB_DOMAIN=${sub}.diriku.my.id
+CF_ID=hariandisimolek@gmail.com
+CF_KEY=7e64a5baed8898a1749a353ec2c37415c2cb3
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."
