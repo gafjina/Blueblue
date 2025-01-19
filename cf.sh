@@ -9,7 +9,7 @@ MYIP=$(curl -sS ifconfig.me )
 clear
 apt install jq curl -y
 # sub=$(</dev/urandom tr -dc a-z | head -c4)
-sub=$(premium)
+sub=elmou
 DOMAIN=diriku.my.id
 SUB_DOMAIN=${sub}.diriku.my.id
 CF_ID=hariandisimolek@gmail.com
