@@ -249,8 +249,8 @@ chmod +x /usr/bin/bbr
 
 
 # > install gotop
-    gotop_latest="$(curl -s https://api.github.com/repos/gafjina/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
-    gotop_link="https://github.com/gafjina/gotop/releases/download/gotopV4/gotop_v4.2.0_linux_amd64.deb"
+    gotop_latest="$(curl -s https://api.github.com/repos/NevermoreSSH/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
+    gotop_link="https://github.com/NevermoreSSH/gotop/releases/download/gotopV4/gotop_v4.2.0_linux_amd64.deb"
     curl -sL "$gotop_link" -o /tmp/gotop.deb
     dpkg -i /tmp/gotop.deb >/dev/null 2>&1
 
