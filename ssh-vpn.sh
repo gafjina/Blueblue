@@ -138,7 +138,7 @@ chmod +x /usr/local/bin/ws-stunnel
 cat > /etc/systemd/system/ws-stunnel.service << END
 [Unit]
 Description=Ovpn Websocket By Akhir Zaman
-Documentation=https://xnxx.com
+Documentation=https://google.com
 After=network.target nss-lookup.target
 
 [Service]
@@ -367,17 +367,17 @@ rm -f /usr/local/bin/stunnel4
 #rm -f /usr/local/bin/stunnel5
 
 # banner /etc/issue.net
-sleep 1
-echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/issue.net"
-chmod +x /etc/issue.net
-echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
-sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
-cat> /etc/issue.net << END
-<font color="red"><b>============================</b></font><br> 
-<font color="white"><b>      PREMIUM SERVICE         </b></font><br> 
-<font color="red"><b>============================</b></font>
-END
+#sleep 1
+#echo -e "[ ${green}INFO$NC ] Settings banner"
+#wget -q -O /etc/issue.net "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/issue.net"
+#chmod +x /etc/issue.net
+#echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
+#sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
+#cat> /etc/issue.net << END
+#<font color="red"><b>============================</b></font><br> 
+#<font color="white"><b>      PREMIUM SERVICE         </b></font><br> 
+#<font color="red"><b>============================</b></font>
+#END
 
 # Restart Stunnel5
 systemctl daemon-reload >/dev/null 2>&1
@@ -480,14 +480,14 @@ sleep 1
 echo -e "[ ${green}INFO$NC ] Config file at /usr/local/ddos/ddos.conf"
 
 # Banner /etc/issue.net
-rm -fr /etc/issue.net
-rm -fr /etc/issue.net.save
-sleep 1
-echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/issue.net"
-chmod +x /etc/issue.net
-echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
-sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
+#rm -fr /etc/issue.net
+#rm -fr /etc/issue.net.save
+#sleep 1
+#echo -e "[ ${green}INFO$NC ] Settings banner"
+#wget -q -O /etc/issue.net "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/issue.net"
+#chmod +x /etc/issue.net
+#echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
+#sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 # Blokir Torrent
 echo -e "[ ${green}INFO$NC ] Set iptables"
